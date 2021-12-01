@@ -1,0 +1,2 @@
+sudo docker rm squid
+sudo docker run --name squid -i --volume /srv/docker/squid/cache:/var/cache/squid --volume /srv/docker/squid/log:/var/log/squid -p 3128:3128/tcp squid 
